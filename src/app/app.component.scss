@@ -9,11 +9,14 @@
     max-width: 1024px;
     margin: 0 auto;
     justify-content: center;
-    align-items: center;
   }
 
   aside {
-    margin-right: 35px;
+    width: 30%;
+    // margin-right: 35px;
+  }
+  main {
+    width: 70%;
   }
 
 }

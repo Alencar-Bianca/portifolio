@@ -1,12 +1,36 @@
 :host {
   .content {
     width: 100%;
-    height: auto;
-    max-width: 250px;
-    padding: 20px;
+    height: 100%;
     background-color: var(--bg-color2);
     border-radius: 20px;
     border: 1px solid var(--color4);
-    flex-direction: column;
+    position: relative;
+
+    .menu {
+      position: absolute;
+      top: 0;
+      right:  0;
+      background-color: var(--bg-color4);
+      width: 340px;
+      height: 55px;
+      border-radius: 0 20px ;
+      border: 1px solid var(--color4);
+      border-top: none;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        a {
+          color: var(--color5);
+          font-weight: 600;
+        }
+        a:hover {
+          color: var(--color-des);
+        }
+      }
+    }
   }
 }
