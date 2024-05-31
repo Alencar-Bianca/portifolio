@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { MenuInfoMeComponent } from './portfolio/menu-info-me/menu-info-me.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MenuInfoMeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
