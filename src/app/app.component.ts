@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
-import { MenuInfoMeComponent } from './portfolio/menu-info-me/menu-info-me.component';
+import { MenuInfoMeComponent } from './portfolio/menu-info-me/MenuInfoMeComponent';
 
 @Component({
   selector: 'app-root',

@@ -1,0 +1,13 @@
+@for(info of infos(); track info;) {
+  <div class="container-info-person">
+    <a href="{{info.link}}" target="_blank" class="info-person flex">
+      <div class="container-img flex flex-center">
+        <img src="{{info.img}}" alt="{{info.title}}">
+      </div>
+      <div class="container-text">
+        <p class="title">{{info.title}}</p>
+        <p class="description">{{info.text}}</p>
+      </div>
+    </a>
+  </div>
+}

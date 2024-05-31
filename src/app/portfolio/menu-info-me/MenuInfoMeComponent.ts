@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { InfoPersonComponent } from '../components/info-person/info-person.component';
 import { IconsLinkComponent } from '../components/icons-link/icons-link.component';
+import { IconsLinkInterface } from '../interfaces/icons-link-interface';
 
 
 

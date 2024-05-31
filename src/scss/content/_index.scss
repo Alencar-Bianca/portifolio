@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 205px;
+  height: 2px;
+  background-color: var(--color-des);
+}
