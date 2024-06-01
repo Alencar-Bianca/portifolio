@@ -1,0 +1,27 @@
+:host {
+  .content {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    .description {
+      p {
+        color: var(--color5);
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+    }
+
+    .hab {
+      .main-title {
+        margin-bottom: 20px;
+      }
+      .icons {
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

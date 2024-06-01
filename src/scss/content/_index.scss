@@ -12,3 +12,22 @@
   height: 2px;
   background-color: var(--color-des);
 }
+
+
+.main-title {
+  color: var(--color1);
+  font-size: 30px;
+  font-family: var(--font-title);
+}
+
+.main-title::after {
+  display: inline-block;
+  content: ' ';
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-des);
+  position: relative;
+  top: 10px;
+  right: 29px;
+}
+
