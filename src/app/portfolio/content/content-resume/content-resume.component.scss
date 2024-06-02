@@ -1,10 +1,14 @@
 :host {
-  .resume{
+  .resume {
     details {
+      margin-bottom: 30px;
       summary {
-        background-color: var( --bg-color3);
+        position: relative;
+        background-color: var(--bg-color3);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
+        cursor: pointer;
+        padding: 10px 15px;
 
         strong {
           font-size: 20px;
@@ -17,41 +21,31 @@
           font-weight: 300;
         }
 
-        &[open] {
-          summary {
-            &::after {
-              content: url("../../../../assets/icon/chevron-up.svg");
-              margin-top: 5px;
-            }
-
-            border-radius: 7px 7px 0 0;
-          }
+        &::after {
+          content: url("../../../../assets/icon/chevron-down.svg");
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
         }
 
-        &:not([open]) {
-          summary {
-            &::after {
-              content: url("../../../../assets/icon/chevron-down.svg");
-              margin-top: 5px;
-            }
-          }
-        }
+
+      }
+
+      &[open] summary::after {
+        content: url("../../../../assets/icon/chevron-up.svg");
       }
 
       article {
-        background-color: var( --bg-color4);
+        background-color: var(--bg-color4);
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
+        padding: 15px;
 
         font-size: 16px;
         color: var(--color5);
         font-weight: 300;
       }
-
-
-
-
-
     }
   }
 
