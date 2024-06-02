@@ -1,0 +1,21 @@
+:host {
+  .resume {
+
+    button {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 0;
+      img{
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        border: 2px solid var(--color-des);
+      }
+    }
+
+  }
+}

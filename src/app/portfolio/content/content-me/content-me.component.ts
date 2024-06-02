@@ -12,7 +12,7 @@ import { ContentProjectComponent } from '../content-project/content-project.comp
   styleUrl: './content-me.component.scss'
 })
 export class ContentMeComponent {
-  public isShowInfo = signal<string>('about');
+  public isShowInfo = signal<string>('project');
 
 
   public showInfoAbout(info:string , event: Event) {

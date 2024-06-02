@@ -4,6 +4,20 @@
   </div>
 
   <div class="resume">
-
+    <ul>
+      @for(project of projects(); track project){
+      <li>
+        <button >
+          <img
+            [src]="project.src"
+            [alt]="project.alt"
+            [attr.width]="project.with"
+            [attr.height]="project.height"
+            loading="lazy"
+          />
+        </button>
+      </li>
+      }
+    </ul>
   </div>
 </div>

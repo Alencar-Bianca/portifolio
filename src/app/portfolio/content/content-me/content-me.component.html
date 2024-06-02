@@ -15,7 +15,18 @@
       <div class="resume "><app-content-resume/></div>
     }
     @case ('project') {
-      <div class="about "><app-content-project/></div>
+      @defer(on viewport){
+        <div class="about "><app-content-project/></div>
+        } @placeholder {
+        <section>
+          <h2>Carregando todos os projetos desenvolvidos...</h2>
+        </section>
+        } @error {
+        <section>
+          <h2>Ocorreu um erro no download do componente, tente novamente...</h2>
+        </section>
+        }
+
     }
     @default {
       <div class="about "><app-content-about-me/></div>

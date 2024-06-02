@@ -18,7 +18,7 @@ export class ContentResumeComponent {
     },
     {
       title: 'Desenvolvedora Fullstack',
-      info: 'Finger Digital Jan 2022 - Abr 2022',
+      info: 'Finger Digital | Jan 2022 - Abr 2022',
       description: 'Recebia diversas demandas de projetos Web, implementei o design UX/UI no frontend; fiz também a implementação do backend e integração das duas partes em todos os projetos que entreguei nesse período.'
     }
   ])
