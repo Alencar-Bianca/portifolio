@@ -1,10 +1,15 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
+
+import {MatDialog, MatDialogModule} from '@angular/material/dialog';
+
 import { ProjectsInterface } from '../../interfaces/projects-interfaces';
+import { DialogProjectsComponent } from '../../components/dialog-projects/dialog-projects.component';
+import { DialogProjectPanel } from '../../enum/dialog-project-panel';
 
 @Component({
   selector: 'app-content-project',
   standalone: true,
-  imports: [],
+  imports: [MatDialogModule],
   templateUrl: './content-project.component.html',
   styleUrl: './content-project.component.scss'
 })
@@ -25,5 +30,14 @@ export class ContentProjectComponent {
         },
       ],
     }
-  ])
+  ]);
+
+  #dialog = inject(MatDialog);
+
+  public openDialog(data: ProjectsInterface) {
+    this.#dialog.open(DialogProjectsComponent, {
+      data,
+      panelClass: DialogProjectPanel.PROJECTS,
+    });
+  }
 }
