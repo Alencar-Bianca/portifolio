@@ -1,13 +1,28 @@
 <div class="content">
   <nav class="menu">
     <ul class="flex flex-center">
-      <a href=""><li>Sobre</li></a>
-      <a href=""><li>Resumo</li></a>
-      <a href=""><li>Projetos</li></a>
+      <a href="#" [class.current]="isShowInfo() == 'about'" (click)="showInfoAbout('about', $event)"><li>Sobre</li></a>
+      <a href="#" [class.current]="isShowInfo() == 'resume'" (click)="showInfoAbout('resume', $event)"><li>Resumo</li></a>
+      <a href="#" [class.current]="isShowInfo() == 'project'" (click)="showInfoAbout('project', $event)"><li>Projetos</li></a>
     </ul>
   </nav>
 <div class="container-content">
-  <div class="about "><app-content-about-me/></div>
+  @switch (isShowInfo()) {
+    @case ('about') {
+      <div class="about "><app-content-about-me/></div>
+    }
+    @case ('resume') {
+      <div class="resume "><app-content-resume/></div>
+    }
+    @case ('project') {
+      <div class="resume "><app-content-resume/></div>
+    }
+    @default {
+      <div class="about "><app-content-about-me/></div>
+    }
+  }
+
+
 </div>
 </div>
 

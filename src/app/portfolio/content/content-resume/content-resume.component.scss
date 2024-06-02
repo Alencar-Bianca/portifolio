@@ -1,0 +1,58 @@
+:host {
+  .resume{
+    details {
+      summary {
+        background-color: var( --bg-color3);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        strong {
+          font-size: 20px;
+          color: var(--color5);
+          font-weight: 600;
+        }
+        p {
+          font-size: 18px;
+          color: var(--color5);
+          font-weight: 300;
+        }
+
+        &[open] {
+          summary {
+            &::after {
+              content: url("../../../../assets/icon/chevron-up.svg");
+              margin-top: 5px;
+            }
+
+            border-radius: 7px 7px 0 0;
+          }
+        }
+
+        &:not([open]) {
+          summary {
+            &::after {
+              content: url("../../../../assets/icon/chevron-down.svg");
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+
+      article {
+        background-color: var( --bg-color4);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        font-size: 16px;
+        color: var(--color5);
+        font-weight: 300;
+      }
+
+
+
+
+
+    }
+  }
+
+}

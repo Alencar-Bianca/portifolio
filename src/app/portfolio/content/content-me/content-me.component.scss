@@ -28,15 +28,22 @@
         a:hover {
           color: var(--color-des);
         }
+
+        a.current {
+          color: var(--color-des);
+        }
+
       }
     }
 
     .container-content {
       height: 100%;
       padding: 0 30px;
-      .about {
+      .about, .resume {
         height: 100%;
       }
     }
   }
+
+
 }
