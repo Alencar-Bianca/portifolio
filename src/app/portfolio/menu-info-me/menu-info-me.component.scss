@@ -48,4 +48,18 @@
   .icons-link {
     width:80%;
   }
+
+  @media screen and (max-width: 1044px) {
+    .container-info {
+      width: 100%;
+      height: auto;
+      max-width: 250px;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid var(--color4);
+      flex-direction: column;
+     }
+
+
+  }
 }
