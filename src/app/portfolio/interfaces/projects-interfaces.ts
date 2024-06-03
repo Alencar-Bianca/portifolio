@@ -5,10 +5,6 @@ export interface ProjectsInterface {
   with: string;
   height: string;
   description: string;
-  links: [
-    {
-      name: string;
-      href: string;
-    }
-  ];
+  link: string;
+
 }
