@@ -1,6 +1,6 @@
 # Portfolio
 
-![Design preview for the Social links profile coding challenge](./temple.png)
+![Design preview for the Social links profile coding challenge](./template.png)
 
 ## 📦 Instalação
 
