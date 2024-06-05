@@ -1,27 +1,34 @@
 # Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.3.
+![Design preview for the Social links profile coding challenge](./temple.png)
 
-## Development server
+## 📦 Instalação
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Executar para clonar o projeto:
 
-## Code scaffolding
+```bash
+git clone https://github.com/Alencar-Bianca/portifolio.git
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Entrar na pasta usando cd e executar para instalar as dependências necessárias:
 
-## Build
+```bash
+npm install
+```
+Executar para rodar o projeto:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+ng s 
+```
 
-## Running unit tests
+## 🚀 Tecnologias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
-## Running end-to-end tests
+- Angular
+- HTML
+- SCSS
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚧 Projeto:
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Link do Projeto: [Portfolio](https://portfolio-alencar.netlify.app/)
